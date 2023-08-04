@@ -15,4 +15,4 @@ python3 main.py
 
 ## References
 
-Based on the following paper: Molinero, C. and Hernando, A. 2020. A model for the generation of road networks (https://arxiv.org/abs/2001.08180). 
+Based on the following paper: Molinero, C. and Hernando, A. 2020. A model for the generation of road networks, https://arxiv.org/abs/2001.08180. 
