@@ -11,6 +11,8 @@ if __name__ == '__main__':
 
     # load heightmap
     z = am.load_img('data/hmap.png')[:, :, 0]
+    z = np.flipud(z).T
+
     z = (z - z.min()) / z.ptp()
     extent = [0, 1, 0, 1]
     seed = 1
@@ -31,9 +33,9 @@ if __name__ == '__main__':
         yc,
         size,
         z,
-        n_dummy_nodes=2000,
-        alpha=0.6,
-        dz_weight=1,
+        n_dummy_nodes=6000,
+        alpha=0.7,
+        dz_weight=5,
         extent=extent,
         seed=seed)
 
